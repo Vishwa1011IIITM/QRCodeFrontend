@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container for the entire app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+  color: #4caf50;
+}
+
+/* Main Content */
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Scanner and Verification Components */
+#reader {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.verification-container {
+  text-align: left;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .app-header h1 {
+      font-size: 2.4rem;
+  }
+
+  .app-main {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  #reader {
+      max-width: 400px;
+      height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-container {
+      padding: 32px;
+  }
+
+  .app-header h1 {
+      font-size: 2.8rem;
+  }
+
+  .app-main {
+      max-width: 800px;
+  }
+
+  #reader {
+      max-width: 500px;
+      height: 500px;
+  }
+}
